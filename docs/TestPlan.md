@@ -72,7 +72,16 @@ The aim is to confirm that typical user workflows function correctly and that in
 
 ---
 
-## 7. Entry & Exit Criteria
+## 7.Test Strategy##  :  
+Types of Testing: Functional and Non functional  
+Test levels: System and Integration.  
+Approach : Manual and Automation  
+Entry Criteria: Web app and Swagger endpoints are reachable; environment stable  
+Exit Criteria: Planned test cases executed; evidence captured; automation green; defects logged with clear repro steps.
+
+--------
+
+## 8. Entry & Exit Criteria
 **Entry**
 - Web app and API are reachable and stable.
 - Test data approach agreed (see Section 10).
@@ -85,7 +94,7 @@ The aim is to confirm that typical user workflows function correctly and that in
 
 ---
 
-## 8. Test Environment
+## 9. Test Environment
 - **UI URL:** https://ensekautomationcandidatetest.azurewebsites.net/ (Chrome latest)  
 - **API Base:** https://qacandidatetest.ensek.io/  
 - **Local:** VS Code/IntelliJ, Java 17, Maven, TestNG, REST Assured  
@@ -93,12 +102,12 @@ The aim is to confirm that typical user workflows function correctly and that in
 
 ---
 
-## 9. Roles & Responsibilities
+## 10. Roles & Responsibilities
 - **Mandar Karekar (QA Engineer):** Test planning, test design, manual execution, API automation, evidence collection, defect logging, and reporting.
 
 ---
 
-## 10. Test Data
+## 11. Test Data
 - **Fuel IDs** discovered dynamically via `GET /ENSEK/energy`.  
 - **Quantities:** representative set — `1, 3` (valid), `0, -1` (invalid), `999999` (excessive), and a non-numeric attempt for negative coverage (where applicable).  
 - **Data files:**  
@@ -107,7 +116,7 @@ The aim is to confirm that typical user workflows function correctly and that in
 
 ---
 
-## 11. Risks & Mitigations
+## 12. Risks & Mitigations
 | Risk | Mitigation |
 |------|------------|
 | Shared/dirty environment affecting data | Use small quantities; re-query state; use reset endpoint if available |
@@ -117,32 +126,30 @@ The aim is to confirm that typical user workflows function correctly and that in
 
 ---
 
-## 12. Suspension & Resumption Criteria
+## 13. Suspension & Resumption Criteria
 - **Suspend** testing if the environment is unavailable for >1 hour or core endpoints repeatedly fail (5xx) across attempts.  
 - **Resume** when endpoints are reachable and stable; document downtime in `docs/TestEvidence.md`.
 
 ---
 
-## 13. Deliverables
-- `docs/TestPlan.md` (this document)  
-- `docs/TestStrategy.md` (how testing is approached)  
+## 14. Deliverables
+- `docs/TestPlan.md` (this document includes Test Startegy)   
 - `docs/TestEvidence.md` (+ `/screenshots`) — manual UI execution results  
 - `docs/TestData.xlsx` (+ `TestData.md`) — test inputs & expectations  
 - `docs/DefectLog.md` — defects with ID, title, steps, expected/actual, severity, evidence link  
 - `src/test/java/apiTests/*` — API automation code (REST Assured + TestNG)  
-- (Optional) `src/test/java/uiTests/*` — small Selenium sanity  
 - `README.md` — project overview & run instructions
 
 ---
 
-## 14. Reporting
+## 15. Reporting
 - **Automation:** Maven Surefire/TestNG output; optional HTML report (Allure/Extent) if time permits.  
 - **Manual:** `docs/TestEvidence.md` with screenshots and pass/fail.  
 - **Defects:** `docs/DefectLog.md` (table format).
 
 ---
 
-## 15. Schedule (48-hour indicative)
+## 16. Schedule (48-hour indicative)
 - **T0–T8h:** Finalize plan/strategy; scaffold Maven; prove API connectivity.  
 - **T8–T24h:** Automate happy paths; start negative cases.  
 - **T24–T36h:** Execute UI scenario; capture evidence; complete negatives.  
