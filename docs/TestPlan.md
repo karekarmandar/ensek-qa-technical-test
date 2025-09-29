@@ -23,9 +23,11 @@ Api : Get,Put, Post ,Delete responses.
 Types of Testing: Functional and Non functional
 Test levels: System and Integration.
 Approach : Manual and Automation
-Entry Criteria: Start with Company Logo
-Exit Criteria: functionalities and api responses.
-Test Environment :UI -  https://ensekautomationcandidatetest.azurewebsites.net/ andfor  API : https://qacandidatetest.ensek.io/ , with Postman.
+Entry Criteria:Web app and Swagger endpoints are reachable; environment stable
+Exit Criteria: Planned test cases executed; evidence captured; automation green; defects logged with clear repro steps.
+**Test Environment** :UI -  https://ensekautomationcandidatetest.azurewebsites.net/ andfor  API : https://qacandidatetest.ensek.io/ , with Postman.
+Roles and Responsibilities: QA Engineer for writing test cases, testing ui/ux, manual , automation, bugs, test results, reporting.
+
 
 
 
