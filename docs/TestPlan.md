@@ -1,1 +1,3 @@
-ENSEK QA Technical Test – Test Plan
+ENSEK QA Technical Test – Test Plan.
+Test Plan ID : EK001.
+
