@@ -161,10 +161,10 @@ Read the number from Test Results and record it.
 -  pm.expect(true).to.be.true;
 - });
 
-- // 6) (Optional) Save it as a collection variable for later use
+- // 6) Save it as a collection variable for later use
 - pm.collectionVariables.set("orders_before_today", String(countBeforeToday));
 
-- // 7) (Optional) Also log to Postman Console
+- // 7)  Also log to Postman Console
 - console.log("Orders before today (UTC):", countBeforeToday);
 
 
