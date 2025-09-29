@@ -1,3 +1,4 @@
 # Test Case 1, ID - TC01 , Title : Home Page loads Propelry and all the key elements are visible.
-**Description** :  When the user visits the url , the Page should fully load and the page should display all the tabs, functionalities, elements. Such as Logo, Home, About, Contact, Register, Log in; hero banner and Buy energy / Sell energy / About us cards visible..
-**Pre-Requisite** : User should be Authorised user, user should have access to url, https://ensekautomationcandidatetest.azurewebsites.net/ 
+**Description** :  When the user visits the url , the Page should fully load and the page should display all the tabs, functionalities, elements. Such as Logo, Home tab, Home Page, About Tab, , Contact tab, Register, Log in functionality, hero banner and Buy energy / Sell energy / functionality ,  About us cards visible and has all the information dispalyed.
+**Pre-Requisite** : User should be Authorised user , should have Login credentials ( if not then rgeister), user should have access to url, https://ensekautomationcandidatetest.azurewebsites.net/ 
+Steps: User visits the url, https://ensekautomationcandidatetest.azurewebsites.net/  , check the web page for Ensek Loads fully and propely, check the Logo, Home, About tab, Contact, Register, Log in; hero banner and Buy energy / Sell energy / About us cards visible..
