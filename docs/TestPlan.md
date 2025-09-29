@@ -8,12 +8,15 @@ Swagger (API):https://qacandidatetest.ensek.io/
 The Application has 2 parts , 1st: Web(UI/UX): The UI has all the information about the "Ensek" as a company , Buy & Sell Energy , Home page, About , Register for new user, Login for existing users and contaact.
 2nd Part is the API : that exposes endpoints for login, buying energy, and resetting test data.  
 The goal of testing is to make sure both the Web UI and the API work as expected, support common user functionality/tasks, and handle invalid inputs without breaking. We will use a manual testing approach to explore and validate, and automation testing approach to show technical capability.
-**Goals and Objective** : To make sure the main user journeys (buying energy, selling energy, logging in) or the user functionality works smoothly.  
+**Goals and Objective** : To validate the user functionality, data integration for the ENSEK Candidate Test Application works properly.
 Confirm the API endpoints return the right responses, keep data accurate, and handle errors properly.  
 Test and Check that the Web UI shows correct information and applies basic rules.  
 Show the ability to create, run, and automate test cases using Java, Selenium, and RestAssured.  
 Share clear and well-structured test documentation (plan, strategy, test cases, results) through GitHub.
-**Scope** : To Test UI/UX functionalities such as Home, About, Contact, Ensek Company Logo, Buy Energy, Sell Energy, About us, Login ,Register, Response time, the output/results, Email, Password,confirm password.
+**Scope** : 
+UI/UX: To Test UI/UX functionalities such as Home, About, Contact, Ensek Company Logo, Buy Energy, Sell Energy, About us, Login ,Register, Response time, the output/results, Email, Password,confirm password.
+Api : Manul and Automation responses.
 **Out of Scope** : Load/Stress Testing and Pen Testing.
+**Test Items** : 
 
 
