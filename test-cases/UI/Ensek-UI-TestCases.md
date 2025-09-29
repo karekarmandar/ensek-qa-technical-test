@@ -10,5 +10,8 @@
 # Test Case 2, ID - TC02 , Title : Validate buy quantity of each fuel
 **Description** : When the user visits the url , the Page should fully load and User should be able to Navigate to "Buy Some Energy" Tab and user should be able to buy different types of Energy
 **Pre-Requisite** : User should be Authorised user , should have Login credentials ( if not then rgeister), user should have access to url, https://ensekautomationcandidatetest.azurewebsites.net/ 
-**Steps**: User visits the url, https://ensekautomationcandidatetest.azurewebsites.net/  , check the web page for Ensek Loads fully and propely,Then User clicks on "Buy Some Enery" tab. Then the user see the different types options to buy the energy. Then User enter's the required quantity to buy in each filed and clicks Buy option and gets the confirmation . 
-**Note**:The avaliable options are , Gas , Electricity and Oil.
+**Steps**: User visits the url, https://ensekautomationcandidatetest.azurewebsites.net/  , check the web page for Ensek Loads fully and propely,Then User clicks on "Buy Some Enery" tab. Then the user see the different types options to buy the energy with available Quantity. Then User enter's the required quantity to buy in each filed and clicks Buy option and gets the confirmation message. 
+**Expected Outcome**: User should be able to buy the avaibale Quantity of Energy and Proper Confirmation Message should be displayed ( after purchase).
+**Actual Outcome** :Test Case Passed - As User is able to buy the avaibale Quantity of Energy and Proper Confirmation Message is displayed after purchase.
+
+**Note**:The avaliable options are , Gas , Electricity and Oil.  Screenshots Attached Seperately.
