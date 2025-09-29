@@ -94,7 +94,7 @@ The aim is to confirm that typical user workflows function correctly and that in
 ---
 
 ## 9. Roles & Responsibilities
-- **Mandar Karekar (QA):** Test planning, test design, manual execution, API automation, evidence collection, defect logging, and reporting.
+- **Mandar Karekar (QA Engineer):** Test planning, test design, manual execution, API automation, evidence collection, defect logging, and reporting.
 
 ---
 
