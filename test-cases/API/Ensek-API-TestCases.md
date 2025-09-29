@@ -48,6 +48,6 @@ Validate that a user can purchase a small quantity of **each in-stock fuel**, an
 - ( step 3 executed) Stock for each purchased fuel is reduced by `1`.  
 
 **Evidence**  
-- `Screenshots Attached Seperately.
+- Screenshots Attached Seperately.
 
  
