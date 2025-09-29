@@ -68,17 +68,17 @@ After TC001 buys a small quantity of each in-stock for different fuels, verify t
   `[{ energy_id, quantity, orderId?, createdAtStart, createdAtEnd }]`  
 
   **Test Data**: the details are used form TC01 results
--Gas Purchase: "You have purchased 2957 m³ at a cost of 5.1000000000000005 
--there are 15 units remaining. 
--Your order id is a5a74d3e-248a-4daa-9eea-92b44632ff6b."
+- Gas Purchase: "You have purchased 2957 m³ at a cost of 5.1000000000000005 
+- there are 15 units remaining. 
+- Your order id is a5a74d3e-248a-4daa-9eea-92b44632ff6b."
 
--Electric Purchase: "You have purchased 2 kWh at a cost of 0.94 
--there are 4305 units remaining. 
--Your order id is a4d0c8eb-ec41-47e1-98e6-9e6d2c2da342."
+- Electric Purchase: "You have purchased 2 kWh at a cost of 0.94 
+- there are 4305 units remaining. 
+- Your order id is a4d0c8eb-ec41-47e1-98e6-9e6d2c2da342."
   
--Oil Purchase: "You have purchased 1 Litres at a cost of 0.6 
--there are 3 units remaining. 
--Your orderid is 73db236d-991b-4891-a2b9-9236ebe276f0."
+- Oil Purchase: "You have purchased 1 Litres at a cost of 0.6 
+- there are 3 units remaining. 
+- Your orderid is 73db236d-991b-4891-a2b9-9236ebe276f0."
  
 
 **Steps**
