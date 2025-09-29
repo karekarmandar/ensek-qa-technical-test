@@ -15,3 +15,7 @@
 **Actual Outcome** :Test Case Passed - As User is able to buy the avaibale Quantity of Energy and Proper Confirmation Message is displayed after purchase.
 
 **Note**:The avaliable options are , Gas , Electricity and Oil.  Screenshots Attached Seperately.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+# Test Case 3, ID - TC03 , Title : 
+
