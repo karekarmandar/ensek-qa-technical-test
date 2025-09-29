@@ -19,6 +19,13 @@ Api : Manul and Automation responses.
 **Out of Scope** : Load/Stress Testing and Pen Testing.
 **Test Items** : Web UI/UX : Home, About, Contact, Ensek Company Logo, Buy Energy, Sell Energy, About us, Login ,Register, Response time, the output/results, Email, Password,confirm password.
 Api : Get,Put, Post ,Delete responses.
+**Test Strategy** :  
+Types of Testing: Functional and Non functional
+Test levels: System and Integration.
+Approach : Manual and Automation
+Entry Criteria: Start with Company Logo
+Exit Criteria: 
+
 
 
 
