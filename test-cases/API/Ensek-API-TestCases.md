@@ -1,14 +1,49 @@
-## ENSEK-API Test Cases.
+## ENSEK-API-TC001 — Buy a quantity of each available fuel
 
-**ID - TC001, Title :Validate the API response when User Buy's a quantity of each fuel.**
-**Description**:  User hits the given end point to buy different types of Fuels, user enters all the required information and user is able to buy the different types of fuels with available quantity and with the confirmation message.
-**Pre-Requisite** : Authorised User, valid end point, check the available quantity before buying, Postman tool, Correct Fuel id.
-**Steps** : user hits the endpoint to check the Qutantity of the Fuels , https://qacandidatetest.ensek.io/ENSEK/energy, Then User can see the Available quantity of all the Fuel and then user decides to buy the different quantity for each fuel. The end points to buy different fuel are with correct id's are:
-a.) to purchase 15 units of  Gas, PUT request : https://qacandidatetest.ensek.io/ENSEK/buy/1/15   
-b.) to purchase 2 Units of Electircity , Put request : https://qacandidatetest.ensek.io/ENSEK/buy/3/2
-c.) to purchase 1 Unit of Oil , Put request: https://qacandidatetest.ensek.io/ENSEK/buy/4/1
-**Expected Outcome**: 1. All the different types of fuels should be displayed with Available Quantity, ID, Price, Unit type.
-                        2. Customer should get 200k(Success) Response in Postman. 
-**Actual Outcome**: 1. All the different types of fuels are displayed with Available Quantity, ID, Price, Unit type.
-                    2. Also got the 200k(Success) Response in Postman. 
-**Notes** : Screenshots are attached Separately.                    
+**Goal**  
+Validate that a user can purchase a small quantity of **each in-stock fuel**, and that the API returns success and records the orders.
+
+**Endpoints**  
+- `GET  https://qacandidatetest.ensek.io/ENSEK/energy` — list fuels/stock  
+- `PUT  https://qacandidatetest.ensek.io/ENSEK/buy/{id}/{quantity}` — buy fuel  
+- `GET  https://qacandidatetest.ensek.io/ENSEK/orders` — verify orders (used in TC002)
+
+**Pre-requisites**  
+- Valid base URL and network access.  
+- (Optional) `POST /ENSEK/reset` executed to start from a clean state.  
+- Postman (or equivalent tool).  
+- Note: No request body is required for the `PUT` call; values are path parameters.
+
+**Test data**  
+Use the IDs returned by `/ENSEK/energy`. Do **not** hard-code IDs; choose a small quantity (e.g., `1`) for each in-stock item.
+
+**Steps**  
+1. **Discover stock**  
+   - Send `GET /ENSEK/energy`.  
+   - Confirm `200 OK` and capture the list of fuels with their `id`, `price` and `quantityAvailable`.  
+   - Build a list of items where `quantityAvailable > 0`.  
+
+2. **Buy each fuel** (repeat for every in-stock item)  
+   - For item `{id, quantityAvailable}`, send  
+     `PUT /ENSEK/buy/{id}/1` (example: `/ENSEK/buy/1/1`).  
+   - Expect `200 OK` and a confirmation message (may include an order id).  
+   - Record `{energy_id: id, quantity: 1, orderId?}` for verification.
+
+3. **(Optional) Verify stock decrement**  
+   - Send `GET /ENSEK/energy` again and confirm that each purchased item’s `quantityAvailable` decreased by the amount bought.
+
+**Expected outcome**  
+- Each `PUT /ENSEK/buy/{id}/1` for an in-stock fuel returns **`200 OK`** with a success message.  
+- (If step 3 executed) Stock for each purchased fuel is reduced by `1`.  
+- No purchase is attempted for fuels with `quantityAvailable == 0`.
+
+**Actual outcome**  
+- _To be filled during execution (status codes, messages, any discrepancies)._  
+
+**Evidence**  
+- `evidence/api/ENSEK-API-TC001/energy_before.json`  
+- `evidence/api/ENSEK-API-TC001/buy_<id>.json` (one per purchase)  
+- `evidence/api/ENSEK-API-TC001/energy_after.json` (optional)
+
+**Notes**  
+- If the success message reports an incorrect “purchased amount” while orders/stock are correct, raise a **Minor content defect**; do not fail the functional test on message text alone.  
