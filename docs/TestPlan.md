@@ -27,6 +27,8 @@ Entry Criteria:Web app and Swagger endpoints are reachable; environment stable
 Exit Criteria: Planned test cases executed; evidence captured; automation green; defects logged with clear repro steps.
 **Test Environment** :UI -  https://ensekautomationcandidatetest.azurewebsites.net/ andfor  API : https://qacandidatetest.ensek.io/ , with Postman.
 Roles and Responsibilities: QA Engineer for writing test cases, testing ui/ux, manual , automation, bugs, test results, reporting.
+**Tools**: UI/UX - App env, git/github to for documentation, results. API: Postman, IDE - VS Studio, Rest assured, Testng.
+**Risks and Mitigation**: Features/functionality break, no sanitation, no alert
 
 
 
