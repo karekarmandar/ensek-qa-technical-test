@@ -17,6 +17,8 @@ Share clear and well-structured test documentation (plan, strategy, test cases, 
 UI/UX: To Test UI/UX functionalities such as Home, About, Contact, Ensek Company Logo, Buy Energy, Sell Energy, About us, Login ,Register, Response time, the output/results, Email, Password,confirm password.
 Api : Manul and Automation responses.
 **Out of Scope** : Load/Stress Testing and Pen Testing.
-**Test Items** : 
+**Test Items** : Web UI/UX : Home, About, Contact, Ensek Company Logo, Buy Energy, Sell Energy, About us, Login ,Register, Response time, the output/results, Email, Password,confirm password.
+Api : Get,Put, Post ,Delete responses.
+
 
 
