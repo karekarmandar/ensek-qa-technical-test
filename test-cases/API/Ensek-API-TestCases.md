@@ -6,16 +6,20 @@ Validate that a user can purchase a small quantity of **each in-stock fuel**, an
 **Endpoints**  
 - `GET  https://qacandidatetest.ensek.io/ENSEK/energy` — list fuels/stock  
 - `PUT  https://qacandidatetest.ensek.io/ENSEK/buy/{id}/{quantity}` — buy fuel  
-- `GET  https://qacandidatetest.ensek.io/ENSEK/orders` — verify orders (used in TC002)
+- `GET  https://qacandidatetest.ensek.io/ENSEK/orders` — verify orders 
 
 **Pre-requisites**  
 - Valid base URL and network access.  
-- (Optional) `POST /ENSEK/reset` executed to start from a clean state.  
+- Authorised User  
 - Postman (or equivalent tool).  
 - Note: No request body is required for the `PUT` call; values are path parameters.
 
-**Test data**  
-Use the IDs returned by `/ENSEK/energy`. Do **not** hard-code IDs; choose a small quantity (e.g., `1`) for each in-stock item.
+**Test data**  : 
+  -https://qacandidatetest.ensek.io/ENSEK/energy , to ge the list of fuel
+ - https://qacandidatetest.ensek.io/ENSEK/buy/1/15  , to purchase Gas.
+ - https://qacandidatetest.ensek.io/ENSEK/buy/3/2 , to purchase Electricity.
+ - https://qacandidatetest.ensek.io/ENSEK/buy/4/1 , to purchase Oil.
+ - https://qacandidatetest.ensek.io/ENSEK/orders, to get the list of all oders.
 
 **Steps**  
 1. **Discover stock**  
