@@ -50,4 +50,56 @@ Validate that a user can purchase a small quantity of **each in-stock fuel**, an
 **Evidence**  
 - Screenshots Attached Seperately.
 
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+   ## ENSEK-API-TC002 — Orders list returns each created order with expected details
+
+**Goal**  
+After TC001 buys a small quantity of each in-stock for different fuels, verify that **every** created order appears in `/ENSEK/orders` with the correct fields and values.
+
+**Dependency on**  
+- TC001 has run and captured the data for each successful purchase (energy id, quantity, optional order id).
+
+**Endpoints**  
+- Get : https://qacandidatetest.ensek.io/ENSEK/orders (list all orders)
+
+**Pre-requisites**  
+- User must have a list `createdOrders[]` from TC001 with one entry per purchase:  
+  `[{ energy_id, quantity, orderId?, createdAtStart, createdAtEnd }]`  
+  
+
+**Steps**
+1. **Fetch orders list**  
+   - Send `GET /ENSEK/orders`, to fetch all the orders.
+   - Expect `200 OK` and a JSON array.
+
+2. **Filter to this test run**  
+   - If your `createdOrders` entries have `orderId`, match directly by `id == orderId`.  
+   - If not, match by tuple `(energy_id == <id> AND quantity == <q>)` and, if the schema includes a timestamp, ensure it’s between `createdAtStart` and `createdAtEnd`.
+
+3. **Validate fields for each created order**  
+   For each `createdOrders[i]`:
+   - **Presence:** Exactly **one** matching order exists in the list.  
+   - **Identity:** `energy_id` equals the one you bought; `quantity` equals the one you sent.  
+   - **Pricing (if present):** `totalPrice == unitPrice * quantity` within ±0.01.  
+   - **Timestamps (if present):** `createdAt ∈ [createdAtStart, createdAtEnd]` and `createdAt ≤ now()`.  
+   - **Schema sanity:** Required fields are non-null; types match Swagger (e.g., numbers are numbers).
+
+4. **(Optional) Fetch by id**  
+   - For any entry where you stored `orderId`, call `GET /ENSEK/orders/{orderId}` and repeat the checks above for that single resource.
+
+**Expected outcome (why)**  
+- Every order you created in TC001 must appear in `/orders` **because** creation is a server-side persistence action; the list endpoint is the system of record.  
+- Each order’s **energy_id** and **quantity** must match the request you sent (correctness of write), and pricing/timestamps must be consistent (data integrity).
+
+**Pass / Fail criteria**  
+- **PASS:** All created orders are present exactly once and all assertions above succeed.  
+- **FAIL:** Any missing order, duplicate, mismatched field, wrong math, or out-of-range timestamp. Log a defect with the exact request/response bodies.
+
+**Evidence**  
+- `evidence/api/ENSEK-API-TC002/orders_all.json` (GET /orders response)  
+- `evidence/api/ENSEK-API-TC002/order_<orderId>.json` (optional per-order fetch)  
+- Screenshot(s) of Postman Tests tab with green checks.
+
+
  
