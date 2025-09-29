@@ -99,10 +99,12 @@ After TC001 buys a small quantity of each in-stock for different fuels, verify t
 **Expected outcome (why)**  
 - Every order you created in TC001 must appear in `/orders` **because** creation is a server-side persistence action; the list endpoint is the system of record.  
 - Each order’s **energy_id** and **quantity** must match the request you sent (correctness of write), and pricing/timestamps must be consistent (data integrity).
+  
 
 - **PASS:** All created orders are present exactly once and all assertions above succeed.  
 
 **Evidence**  
 - Screenshot attached.
+
 
  
