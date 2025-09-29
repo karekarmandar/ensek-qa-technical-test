@@ -15,11 +15,11 @@ Validate that a user can purchase a small quantity of **each in-stock fuel**, an
 - Note: No request body is required for the `PUT` call; values are path parameters.
 
 **Test data**  : 
-   To ge the list of fuel - https://qacandidatetest.ensek.io/ENSEK/energy 
-   To purchase Gas - https://qacandidatetest.ensek.io/ENSEK/buy/1/15  
-   To purchase Electricity - https://qacandidatetest.ensek.io/ENSEK/buy/3/2 
-   To purchase Oil -  https://qacandidatetest.ensek.io/ENSEK/buy/4/1 
-   To get the list of all oders.- https://qacandidatetest.ensek.io/ENSEK/orders
+  - To ge the list of fuel - https://qacandidatetest.ensek.io/ENSEK/energy 
+  - To purchase Gas - https://qacandidatetest.ensek.io/ENSEK/buy/1/15  
+  - To purchase Electricity - https://qacandidatetest.ensek.io/ENSEK/buy/3/2 
+  - To purchase Oil -  https://qacandidatetest.ensek.io/ENSEK/buy/4/1 
+  - To get the list of all oders.- https://qacandidatetest.ensek.io/ENSEK/orders
 
 **Steps**  
 1. **Discover stock**  
