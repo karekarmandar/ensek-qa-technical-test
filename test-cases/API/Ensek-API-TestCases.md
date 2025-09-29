@@ -106,5 +106,78 @@ After TC001 buys a small quantity of each in-stock for different fuels, verify t
 **Evidence**  
 - Screenshot attached.
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## ENSEK-API-TC003 — Confirm how many orders were created before the current date
+
+**Goal**  
+- Get the total number of orders whose time is earlier than today (UTC).
+
+**Pre-requisites**  
+
+- Base URL available: https://qacandidatetest.ensek.io
+
+- Postman (or similar) installed
+
+**Test Data**
+- Endpoint
+- GET : https://qacandidatetest.ensek.io/ENSEK/orders
+
+**Steps**
+
+- Send GET Request to url Endpoint in test data.
+
+- In the Tests tab, run the provided script to calculate how many orders have time < today 00:00 UTC.
+
+Read the number from Test Results and record it.
+
+- **Open Tests tab in Post man** 
+- paste this script ( To get the count ) : // 1) Assert the API responded OK
+- pm.test("Status is 200", () => pm.response.to.have.status(200));
+
+- // 2) Parse JSON safely
+- let orders;
+- try {
+-  orders = pm.response.json();
+-} catch (e) {
+-  orders = [];
+-  pm.test("Response is valid JSON", () => { throw e; });
+- }
+
+- // 3) Build "today at 00:00 UTC" cutoff so timezones don't bite us
+- const cutoff = new Date();
+- cutoff.setUTCHours(0, 0, 0, 0);
+
+- // 4) Count only orders strictly BEFORE today (UTC)
+- const countBeforeToday = (Array.isArray(orders) ? orders : [])
+-   .filter(o => {
+-   if (!o || !o.time) return false;   // skip if missing time
+-   const t = new Date(o.time);
+-   return t < cutoff;
+- }).length;
+
+- // 5) Show the number in the Test Results
+- pm.test(`Orders created BEFORE today (UTC): ${countBeforeToday}`, () => {
+-  pm.expect(true).to.be.true;
+- });
+
+- // 6) (Optional) Save it as a collection variable for later use
+- pm.collectionVariables.set("orders_before_today", String(countBeforeToday));
+
+- // 7) (Optional) Also log to Postman Console
+- console.log("Orders before today (UTC):", countBeforeToday);
+
+
+**Expected outcome**
+- Request returns 200 OK.
+- A numeric count is produced (≥ 0).
+
+**Actual outcome**
+HTTP status: 200 OK (PASS)
+Postman Test Result: “Orders created BEFORE today (UTC): 5” (PASS)
+
+**Evidence**
+Screenshots
+
 
  
