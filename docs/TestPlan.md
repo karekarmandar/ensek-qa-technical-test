@@ -13,5 +13,7 @@ Confirm the API endpoints return the right responses, keep data accurate, and ha
 Test and Check that the Web UI shows correct information and applies basic rules.  
 Show the ability to create, run, and automate test cases using Java, Selenium, and RestAssured.  
 Share clear and well-structured test documentation (plan, strategy, test cases, results) through GitHub.
+**Scope** : To Test UI/UX functionalities such as Home, About, Contact, Ensek Company Logo, Buy Energy, Sell Energy, About us, Login ,Register, Response time, the output/results, Email, Password,confirm password.
+**Out of Scope** : Load/Stress Testing and Pen Testing.
 
 
