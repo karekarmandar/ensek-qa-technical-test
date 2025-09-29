@@ -1,4 +1,4 @@
-ENSEK QA Technical Test – Test Plan.
+**ENSEK QA Technical Test – Test Plan.**
 Test Plan ID : EK001.
 Author : Mandar Karekar - QA Engineer.
 Test Window : 48 hrous from receipt.
