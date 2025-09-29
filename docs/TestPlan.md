@@ -24,7 +24,10 @@ Types of Testing: Functional and Non functional
 Test levels: System and Integration.
 Approach : Manual and Automation
 Entry Criteria: Start with Company Logo
-Exit Criteria: 
+Exit Criteria: functionalities and api responses.
+Test Environment :UI -  https://ensekautomationcandidatetest.azurewebsites.net/ andfor  API : https://qacandidatetest.ensek.io/ , with Postman.
+
+
 
 
 
