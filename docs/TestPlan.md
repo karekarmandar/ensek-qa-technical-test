@@ -28,7 +28,12 @@ Exit Criteria: Planned test cases executed; evidence captured; automation green;
 **Test Environment** :UI -  https://ensekautomationcandidatetest.azurewebsites.net/ andfor  API : https://qacandidatetest.ensek.io/ , with Postman.
 Roles and Responsibilities: QA Engineer for writing test cases, testing ui/ux, manual , automation, bugs, test results, reporting.
 **Tools**: UI/UX - App env, git/github to for documentation, results. API: Postman, IDE - VS Studio, Rest assured, Testng.
-**Risks and Mitigation**: Features/functionality break, no sanitation, no alert
+**Risks and Mitigation**: Features/functionality break, no sanitation, no alert, some features/functionalities missing.
+Suspension:
+Test Data:
+Defect Management : 
+Deliverables:
+Report:
 
 
 
