@@ -98,7 +98,7 @@ Exit Criteria: Planned test cases executed; evidence captured; automation green;
 - **UI URL:** https://ensekautomationcandidatetest.azurewebsites.net/ (Chrome latest)  
 - **API Base:** https://qacandidatetest.ensek.io/  
 - **Local:** VS Code/IntelliJ, Java 17, Maven, TestNG, REST Assured  
-- **Optional tools:** Postman for quick exploration; Selenium WebDriver for a small UI sanity if time allows.
+- **Optional tools:** Postman for manual API quick exploration; Api Automation: Java, Rest-Assured, Junit, Hamcrest, Maven, Json
 
 ---
 
