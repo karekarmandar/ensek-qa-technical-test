@@ -1,13 +1,13 @@
 **Test Case 1**
 
-ID: UI-TC01
-Title: Validate Home Page loads properly and all the Headers, Navigation links, Buttons are visible.
+**ID: UI-TC01**
+**Title**: Validate Home Page loads properly and all the Headers, Navigation links, Buttons are visible.
 
-Description: When the user visits the URL, the page should fully load and display all the headers, navigation links, tabs, and logo text. Elements such as Logo, Home tab, About tab, Contact tab, Register, Log in, hero banner, Buy energy/Sell energy tab, and About Us should be visible with correct information.
+**Description**: When the user visits the URL, the page should fully load and display all the headers, navigation links, tabs, and logo text. Elements such as Logo, Home tab, About tab, Contact tab, Register, Log in, hero banner, Buy energy/Sell energy tab, and About Us should be visible with correct information.
 
-Pre-Requisite: User should be an authorized user to access URL → Ensek App
+**Pre-Requisite**: User should be an authorized user to access URL → Ensek App
 
-Steps:
+**Steps**:
 
 Visit the URL.
 
@@ -17,11 +17,11 @@ Check visibility of Logo, Home, About, Contact, Register, Log in tabs.
 
 Verify hero banner, Buy energy/Sell energy, About Us cards are visible.
 
-Expected Outcome: All headers, navigation links, and cards are displayed properly.
+**Expected Outcome**: All headers, navigation links, and cards are displayed properly.
 
-Actual Outcome:  Test Case Passed – page loads correctly and all elements are displayed.
+**Actual Outcome**:  Test Case Passed – page loads correctly and all elements are displayed.
 
-Note: Screenshots attached separately.
+**Note**: Screenshots attached separately.
 
 Test Case 2
 
