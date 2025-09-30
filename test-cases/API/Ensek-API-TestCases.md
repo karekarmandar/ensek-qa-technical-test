@@ -43,6 +43,7 @@ Validate that a user can purchase a small quantity of **each in-stock fuel**, an
 - No purchase is attempted for fuels with `quantityAvailable == 0`.
 
 **Actual outcome**  
+- Test case Passed
 - Each Get Request displays proper iformation about the fuel, such as : Type, id, quantity, Unit type.
 - Each `PUT Request' returns **`200 OK`** with a success message.
 - ( step 3 executed) Stock for each purchased fuel is reduced by `1`.  
@@ -50,7 +51,7 @@ Validate that a user can purchase a small quantity of **each in-stock fuel**, an
 **Evidence**  
 - Screenshots Attached Seperately.
 
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
    ## ENSEK-API-TC002 — Orders list returns each created order with expected details
 
@@ -101,7 +102,9 @@ After TC001 buys a small quantity of each in-stock for different fuels, verify t
 - Each order’s **energy_id** and **quantity** must match the request you sent (correctness of write), and pricing/timestamps must be consistent (data integrity).
   
 
-- **PASS:** All created orders are present exactly once and all assertions above succeed.  
+- **Actual Outcome:**
+- Test case Passed
+- All created orders are present exactly once and all assertions above succeed.  
 
 **Evidence**  
 - Screenshot attached.
@@ -173,8 +176,9 @@ Read the number from Test Results and record it.
 - A numeric count is produced (≥ 0).
 
 **Actual outcome**
-HTTP status: 200 OK (PASS)
-Postman Test Result: “Orders created BEFORE today (UTC): 5” (PASS)
+- Test case Passed
+- HTTP status: 200 OK (PASS)
+- Postman Test Result: “Orders created BEFORE today (UTC): 5” (PASS)
 
 **Evidence**
 Screenshots
