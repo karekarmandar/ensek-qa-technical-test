@@ -1,4 +1,0 @@
-com\github\karekarmandar\ensek\BaseApiTest.class
-com\github\karekarmandar\ensek\TC001_BuyEachInStockApiTest.class
-com\github\karekarmandar\ensek\TC003_CountOrdersBeforeTodayApiTest.class
-com\github\karekarmandar\ensek\TC002_OrdersContainPurchasesApiTest.class
