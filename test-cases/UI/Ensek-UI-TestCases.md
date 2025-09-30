@@ -110,81 +110,85 @@
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Test Case 5
+**Test Case 5**
 
-ID: UI-TC05
-Title: Validate “Sell Some Energy” page displays key elements/information
+**ID: UI-TC05**
+**Title**: Validate “Sell Some Energy” page displays key elements/information
 
-Description: User should be able to navigate to Sell Energy tab and view all required information.
+**Description**: User should be able to navigate to Sell Energy tab and view all required information.
 
-Pre-Requisite: User should be an authorized user to access URL.
+**Pre-Requisite**: User should be an authorized user to access URL.
 
-Steps:
+**Steps**:
 
-Visit the URL.
+- Visit the URL.
 
-Navigate to Sell Energy tab.
+- Navigate to Sell Energy tab.
 
-Verify all required information is displayed.
+- Verify all required information is displayed.
 
-Expected Outcome: All correct information should be displayed.
+ **Expected Outcome**: All correct information should be displayed.
 
-Actual Outcome:  Test Case Failed – Page only shows “Maintenance” banner, with no date or time.
+ **Actual Outcome**:  Test Case Failed – Page only shows “Maintenance” banner, with no date or time.
 
-Suggestion: Add date/time to indicate maintenance duration.
+**Suggestion**: Add date/time to indicate maintenance duration.
 
-Evidence: Screenshot attached.
+**Evidence**: Screenshot attached.
 
-Test Case 6
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-ID: UI-TC06
-Title: Validate “Contact” page displays key elements/information
+**Test Case 6**
 
-Description: User should be able to view all required contact information.
+**ID: UI-TC06**
+**Title**: Validate “Contact” page displays key elements/information
 
-Pre-Requisite: User should be an authorized user to access URL.
+**Description**: User should be able to view all required contact information.
 
-Steps:
+**Pre-Requisite**: User should be an authorized user to access URL.
 
-Visit the URL.
+**Steps**:
 
-Navigate to Contact page via navigation link.
+- Visit the URL.
 
-Verify presence of contact email, address, and phone.
+- Navigate to Contact page via navigation link.
 
-Expected Outcome: All correct and necessary contact details are displayed.
+- Verify presence of contact email, address, and phone.
 
-Actual Outcome:  Test Case Failed – Page shows “Erorr” banner (misspelled), and no contact details provided.
+**Expected Outcome**: All correct and necessary contact details are displayed.
 
-Suggestion: Correct spelling and add contact information for customer support.
+**Actual Outcome**:  Test Case Failed – Page shows “Erorr” banner (misspelled), and no contact details provided.
 
-Evidence: Screenshot attached.
+**Suggestion**: Correct spelling and add contact information for customer support.
 
-Test Case 7
+**Evidence**: Screenshot attached.
 
-ID: UI-TC07
-Title: Validate “Forgot Password” functionality
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Description: User should be able to click “Forgot Password” link, enter registered email, and receive a password reset link.
+**Test Case 7**
 
-Pre-Requisite: User should be registered and authorized.
+**ID: UI-TC07**
+**Title**: Validate “Forgot Password” functionality
 
-Steps:
+**Description**: User should be able to click “Forgot Password” link, enter registered email, and receive a password reset link.
 
-Visit the URL.
+**Pre-Requisite**: User should be registered and authorized.
 
-Navigate to Login page.
+**Steps**:
 
-Look for Forgot Password link.
+- Visit the URL.
 
-Enter registered email.
+- Navigate to Login page.
 
-Verify reset password link is sent.
+- Look for Forgot Password link.
 
-Expected Outcome: “Forgot Password” link is visible and confirmation message is shown after entering email (e.g., Password reset link sent to your email).
+- Enter registered email.
 
-Actual Outcome:  Test Case Failed – No “Forgot Password” link present.
+- Verify reset password link is sent.
 
-Suggestion: Add a visible “Forgot Password” link on login page.
+**Expected Outcome**: “Forgot Password” link is visible and confirmation message is shown after entering email (e.g., Password reset link sent to your email).
 
-Evidence: Screenshot attached.
+**Actual Outcome**:  Test Case Failed – No “Forgot Password” link present.
+
+**Suggestion**: Add a visible “Forgot Password” link on login page.
+
+**Evidence**: Screenshot attached.
