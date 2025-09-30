@@ -1,4 +1,4 @@
-Test Case 1
+**Test Case 1**
 
 ID: UI-TC01
 Title: Validate Home Page loads properly and all the Headers, Navigation links, Buttons are visible.
