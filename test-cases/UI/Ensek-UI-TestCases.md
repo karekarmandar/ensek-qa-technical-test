@@ -25,4 +25,13 @@
 - **Actual Outcome** :Test Case Failed - As No warning Message is displayed and got Server Side error ( Data validation error)
 - **Evidence**: Screenshot attached
 
+-------------------------------------------------------------------------------------------------------------------------------------------
 
+# Test Case 4, UI - ID - TC04 , Title : Validate the output for New Registration
+- **Description** : When the user visits the url , the Page should fully load and User should be able to Navigate to "Register", fills all the deatils, email , password and clicks on register.
+- - **Pre-Requisite** : User should be Authorised user to access url, https://ensekautomationcandidatetest.azurewebsites.net/, user should have alpha-numerical password.
+- **Steps**: User visits the url, https://ensekautomationcandidatetest.azurewebsites.net/  , check the web page for Ensek Loads fully and propely,Then User clicks on "Register" to register him/her as a new user. Enters email, alpha-numeric password, confirms it and clicks register.
+- **Expected Outcome**: User should be able to able to register and should get confirmation message or warning/alert message if details are not correct.
+- **Actual Outcome** : Test Case Failed as Nothing happens. No Outcome, No warning , No message.
+- **Evidence**: Screenshot attached
+- **Suggestion**:   For Registration , it is advised to have Name, Last name, DOB, Address field for safety secure reasons .
