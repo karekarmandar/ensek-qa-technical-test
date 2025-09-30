@@ -23,84 +23,92 @@
 
 **Note**: Screenshots attached separately.
 
-Test Case 2
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-ID: UI-TC02
-Title: Validate Buy Quantity of each fuel
+**Test Case 2**
 
-Description: User should be able to navigate to "Buy Some Energy" tab and purchase different types of fuels.
+**ID: UI-TC02**
+**Title**: Validate Buy Quantity of each fuel
 
-Pre-Requisite: User should be an authorized user to access URL.
+**Description**: User should be able to navigate to "Buy Some Energy" tab and purchase different types of fuels.
 
-Steps:
+**Pre-Requisite**: User should be an authorized user to access URL.
 
-Visit the URL.
+**Steps**:
 
-Navigate to Buy Some Energy tab.
+- Visit the URL.
 
-View available energy options and quantities.
+- Navigate to Buy Some Energy tab.
 
-Enter required quantity in the input fields.
+- View available energy options and quantities.
 
-Click Buy and verify confirmation.
+- Enter required quantity in the input fields.
 
-Expected Outcome: User is able to buy available fuel quantity and gets a confirmation message.
+- Click Buy and verify confirmation.
 
-Actual Outcome:  Test Case Passed – User is able to buy energy and confirmation message is displayed.
+**Expected Outcome**: User is able to buy available fuel quantity and gets a confirmation message.
 
-Note: Options available – Gas, Electricity, Oil. Screenshots attached separately.
+**Actual Outcome**:  Test Case Passed – User is able to buy energy and confirmation message is displayed.
 
-Test Case 3
+**Note**: Options available – Gas, Electricity, Oil. Screenshots attached separately.
 
-ID: UI-TC03
-Title: Validate output for large number of purchase quantity
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Description: User should be able to buy large quantities of fuels or see a warning message for exceeding limits.
+**Test Case 3**
 
-Pre-Requisite: User should be an authorized user to access URL.
+**ID: UI-TC03**
+**Title**: Validate output for large number of purchase quantity
 
-Steps:
+**Description**: User should be able to buy large quantities of fuels or see a warning message for exceeding limits.
 
-Visit the URL.
+**Pre-Requisite**: User should be an authorized user to access URL.
 
-Navigate to Buy Some Energy tab.
+**Steps**:
 
-Enter a very large number (e.g., 1000000000) as purchase quantity.
+- Visit the URL.
 
-Click Buy.
+- Navigate to Buy Some Energy tab.
 
-Expected Outcome: Either purchase is successful within limit, or warning message is displayed for exceeding limit.
+- Enter a very large number (e.g., 1000000000) as purchase quantity.
 
-Actual Outcome:  Test Case Failed – No warning message displayed, server-side error occurred (Data validation issue).
+- Click Buy.
 
-Evidence: Screenshot attached.
+**Expected Outcome**: Either purchase is successful within limit, or warning message is displayed for exceeding limit.
 
-Test Case 4
+**Actual Outcome**:  Test Case Failed – No warning message displayed, server-side error occurred (Data validation issue).
 
-ID: UI-TC04
-Title: Validate new user registration
+**Evidence**: Screenshot attached.
 
-Description: User should be able to navigate to Register, fill details (email, password), and register as a new user.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Pre-Requisite: User should be an authorized user to access URL. Password must be alphanumeric.
+**Test Case 4**
 
-Steps:
+**ID: UI-TC04**
+**Title**: Validate new user registration
 
-Visit the URL.
+**Description**: User should be able to navigate to Register, fill details (email, password), and register as a new user.
 
-Navigate to Register tab.
+**Pre-Requisite**: User should be an authorized user to access URL. Password must be alphanumeric.
 
-Enter email, alphanumeric password, confirm it.
+**Steps**:
 
-Click Register.
+- Visit the URL.
 
-Expected Outcome: User should be registered and see confirmation or warning message.
+- Navigate to Register tab.
 
-Actual Outcome:  Test Case Failed – No outcome or message after submission.
+- Enter email, alphanumeric password, confirm it.
 
-Evidence: Screenshot attached.
+- Click Register.
 
-Suggestion: Registration should include additional fields (Name, Last Name, DOB, Address) for security.
+**Expected Outcome**: User should be registered and see confirmation or warning message.
+
+**Actual Outcome**:  Test Case Failed – No outcome or message after submission.
+
+**Evidence**: Screenshot attached.
+
+**Suggestion**: Registration should include additional fields (Name, Last Name, DOB, Address) for security.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Test Case 5
 
