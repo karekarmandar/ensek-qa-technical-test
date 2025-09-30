@@ -72,7 +72,7 @@ The aim is to confirm that typical user workflows function correctly and that in
 
 ---
 
-## 7.Test Strategy  :  
+## 7. Test Strategy  :  
 Types of Testing: Functional and Non functional  
 Test levels: System and Integration.  
 Approach : Manual and Automation  
