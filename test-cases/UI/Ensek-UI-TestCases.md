@@ -9,13 +9,13 @@
 
 **Steps**:
 
-Visit the URL.
+- Visit the URL.
 
-Verify the page loads fully.
+- Verify the page loads fully.
 
-Check visibility of Logo, Home, About, Contact, Register, Log in tabs.
+- Check visibility of Logo, Home, About, Contact, Register, Log in tabs.
 
-Verify hero banner, Buy energy/Sell energy, About Us cards are visible.
+- Verify hero banner, Buy energy/Sell energy, About Us cards are visible.
 
 **Expected Outcome**: All headers, navigation links, and cards are displayed properly.
 
